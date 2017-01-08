@@ -49,7 +49,7 @@ gulp.task \do !->
     .pipe gulp-livescript {+bare}
     .pipe gulp-insert.prepend "#!/usr/local/bin/node\n"
     .pipe gulp-rename extname: ''
-    .pipe gulp-chmod 755
+    .pipe gulp-chmod 8~755
     .pipe gulp.dest paths.build
 
 gulp.task \res ->
@@ -59,7 +59,7 @@ gulp.task \res ->
   gulp.src \bower_components/semantic-ui/dist/themes/default/assets/fonts/*
     .pipe gulp.dest paths.build+\/fonts
 
-gulp.task \server ->
+gulp.task \server <[build]> ->
   require! \express
   express-server = express!
   express-server.use require(\connect-livereload)!
@@ -69,7 +69,7 @@ gulp.task \server ->
   express-server.listen port
   gulp-util.log "Listening on port: #port"
 
-gulp.task \watch <[build server]> ->
+gulp.task \watch <[server]> ->
   tiny-lr-server.listen tiny-lr-port, ->
     return gulp-util.log it if it
   gulp.watch [paths.html,paths.pug], <[html]>
