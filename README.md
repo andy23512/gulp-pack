@@ -1,10 +1,30 @@
 # gulp pack
 =================
-starter pack of gulp project
+It's a start pack of gulp + express.
 
-# Install
+# What's in this pack
+  * tool
+    * gulp
+    * bower
+  * preprocessor
+  	* pug
+    * stylus
+    * LiveScript
+  * webserver
+  	* express with livereload server
+  * frontend module
+    * jQuery
+    * semantic-ui
+
+
+# setup
   * npm i
   * echo '[your gulp port number]' > port
 
-# development
+# command
+
+## run express
   * npm start
+
+## build static file
+  * npm run build
