@@ -18,13 +18,13 @@ It's a start pack of gulp + express.
 
 
 # setup
-  * npm i
-  * echo '[your gulp port number]' > port
+  * yarn (or npm i)
+  * echo '[express running port number]' > port
 
 # command
 
 ## run express
-  * npm start
+  * yarn start (or npm start)
 
 ## build static file
-  * npm run build
+  * yarn run build (or npm run build)

@@ -8,11 +8,11 @@
   "dependencies": {
     "bower": "^1.8.0",
     "connect-livereload": "^0.6.0",
-    "express": "^4.14.0",
+    "express": "^4.14.1",
     "gulp": "^3.9.1",
     "gulp-chmod": "^2.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-filter": "^4.0.0",
+    "gulp-filter": "^5.0.0",
     "gulp-insert": "^0.5.0",
     "gulp-livereload": "^3.8.1",
     "gulp-livescript": "^3.0.1",
@@ -24,11 +24,10 @@
     "livescript": "^1.5.0",
     "main-bower-files": "^2.13.1",
     "nib": "^1.1.2",
-    "npm": "^4.0.5",
-    "pug": "^0.1.0",
+    "pug": "^2.0.0-beta10",
     "streamqueue": "^1.1.1",
     "tiny-lr": "^1.0.3",
-    "tmp": "0.0.31"
+    "tmp": "^0.0.31"
   },
   "scripts": {
     "build": "gulp --require livescript build",
